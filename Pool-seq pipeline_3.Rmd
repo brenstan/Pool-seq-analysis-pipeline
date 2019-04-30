@@ -9,13 +9,11 @@ I included the SLURMs because it gives an idea of how long each thing took to ru
 Launch Terminal on a Mac. I think there is something called Putty for Windows?
 
 **Logging into Cedar**
-```{r eval = FALSE}
 ssh yourcomputecanadaloginname@cedar.computecanada.ca 
 #ex. bstan@cedar.computecanada.ca
 #You will be prompted for your password 
 #When you type it in nothing will appear but just hit "enter" when you've typed it in 
 #and it should log you right in!
-```
 
 **Navigating around Cedar and creating a project directory**
 
