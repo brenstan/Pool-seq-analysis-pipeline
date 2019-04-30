@@ -1,21 +1,3 @@
----
-title: 'Appendix A: Genomic analysis pipeline'
-geometry: margin=2.54cm
-linkcolor: magenta
-output:
-  pdf_document: null
-  word_document: default
-  latex_engine: exlatex
-pandoc_args: --wrap
-smart: no
-df_print: paged
-urlcolor: magenta
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # General notes about the project
 Below is the pipeline I used to analyze the Pool-seq data. I have generalized each step so that future students can adjust it to their projects. For my project, I analyzed five sites of *Physella johnsoni* and three sites of *Physella gyrina* of 20 to 40 individuals per site. These were sequenced by Genome Quebec on the Illumina HiSeq X, aiming for about 40x coverage (determined to be almost double that in actuality). Each site consisted of half a lane worth of data (total of four lanes).
 
@@ -36,7 +18,7 @@ ssh yourcomputecanadaloginname@cedar.computecanada.ca
 ```
 
 **Navigating around Cedar and creating a project directory**
-```{r eval = FALSE}
+
 ls #will show you all the directories in your home folder 
 
 #How to make symbolic link to our project folder in def-srogers
