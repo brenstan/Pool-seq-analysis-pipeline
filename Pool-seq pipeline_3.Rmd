@@ -1,9 +1,29 @@
+---
+title: 'Appendix A: Genomic analysis pipeline'
+geometry: margin=2.54cm
+linkcolor: magenta
+output:
+  pdf_document: null
+  word_document: default
+  latex_engine: exlatex
+pandoc_args: --wrap
+smart: no
+df_print: paged
+urlcolor: magenta
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # General notes about the project
 Below is the pipeline I used to analyze the Pool-seq data. I have generalized each step so that future students can adjust it to their projects. For my project, I analyzed five sites of *Physella johnsoni* and three sites of *Physella gyrina* of 20 to 40 individuals per site. These were sequenced by Genome Quebec on the Illumina HiSeq X, aiming for about 40x coverage (determined to be almost double that in actuality). Each site consisted of half a lane worth of data (total of four lanes).
 
 The pipeline is not linear, in that there are analysis that branches off at certain points. As well, most of this was run on Cedar so the accessing of modules reflects that. Some of it was run on ARC though.  
 
 I included the SLURMs because it gives an idea of how long each thing took to run for my files. Rememeber that my files were half a lane each, a college of mine sequenced six pools over one lane and her analysis took a fraction of the time listed below. 
+
+I wrote the pipeline in R-markdown hence the formatting. Pretty much all of this is in Unix. Getting used to GitHub formatting. 
 
 # Getting started in Cedar
 Launch Terminal on a Mac. I think there is something called Putty for Windows?
